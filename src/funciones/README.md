@@ -27,3 +27,36 @@ def sumar(a:int,b:int):
 print(sumar(78,56))
 print(sumar(78,56))
 ```
+## funciones avanzadas
+existen dos grandes coneceptos para poder entender el uso avanzado de las funciones:
+1. arguemntos, parametros posicionales y nominales, *args y +kargas.
+2. anotaciones en la salida de una funcion.
+3. recursividad.
+```python
+# anotacion en una funcion 
+def suma(a:int,b:float)->int:
+    return a+b
+# crear una funcion que revisa cuatro numeros enteros como salida que me muestre los 4 numeros enteros en una lista
+def numeros_enteros(a:int,b:int,c:int,d:int)->list[int]:
+    return [a,b,c,d]
+```
+**Argumentos Parametros**
+```python
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
