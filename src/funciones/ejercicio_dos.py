@@ -1,0 +1,1 @@
+# crear un programa que asigne un puntaje a cada letra del adecedarios y que funcion me permita saber la letra que tenga menor puntaje mayor  puntaje y la media 
