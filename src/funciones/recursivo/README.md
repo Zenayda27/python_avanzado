@@ -79,7 +79,44 @@ def mejor_alumno(**kwargs):
 
     return mejor_alumno
 
-
 mejor_alumno(noemi=20, eduardo=18, david=19)
  Resultado:
  ```
+
+ ## Funciones Anonimas 
+ las funciones anonimas en python son llamdas `lambda`, estas funciones tiene las siguientes propiedades:
+ 1. se escribe en una unica sentencia `(lineal)`
+ 2. no tiene nombre `(anonima)`
+ 3. su cuerpo conlleva un `(return)` implicito
+ 4. puede recibir cualquier numero de parametros 
+La escructura para definir una funcion `lambda` es la siguiente:
+1. escribir la plabra reservada `lambda` 
+2. especificar la cantidad de parametros.
+3. indicar los datos de retorno 
+```python
+lambda a,b: a+b
+```
+> [!TIP] Puesto que esta funcion es anonima para ejecutar debempos almacenar la funcion en una variable.
+ ```python
+suma=lambda a,b: a+b
+suma(3,6)
+```
+
+## documentacion 
+python nos permite documentar una funcion con el objetivo de explicar mejor determinadas zonas de nuestro codigo, para esto usamos una cadena de texto despues de la definicion de una funcion, a esta cadena de texto se le conoce como `docstring` y esta delimitado por triples `""" aqui el texto"""`.
+```python
+def suma (a,b):
+    """
+    funcion para realizar la suma de dos numeros
+    """
+## los docstring tambien nos permite explicar los parametros que r4ecibe y los datos de salida
+def resta (a,b):
+    """
+    a= un numero entero.
+    b= un numero entero.
+    en ambos casos a,b no deben recibir vaalores menores 0.
+    retornara un dato entero <int> positivo
+    """
+    return a-b
+```
+> [!WARNING] en le proceso de documentacion tener en cuenta de incluir a lo menos lo siguiente: 1. breve explicacion sobre que hace la funcion 2. especificaciones y caracteristicas de los parametros incluyendo sus tipos 3. restricciones de la funcion 4. el valor que retorna y sus caracteristicas
