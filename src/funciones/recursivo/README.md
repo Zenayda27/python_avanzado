@@ -149,3 +149,54 @@ nos permite indicar que tipo de datos resivira una variable, parametro y el valo
   - tuple|dict -> puede ser dato de tipo tupla o diccionario
   - list[srt|int] ->lista cuyos elementos pueden ser cadena de texto o enteros 
   - dict[str|int,float|int] -> diccionario cuya clave puede ser cadena o entero o cuyo valor puede ser float o entero
+
+## Closure}
+Un Closure en Python es una función que recuerda las variables de otra función, incluso después de que la función principal haya terminado de ejecutarse.
+```python
+def multiplicador(numero):
+    def calcular(valor):
+        return valor * numero
+
+    return calcular
+
+doble = multiplicador(2)
+triple = multiplicador(3)
+
+print(doble(5))
+print(triple(5))
+```
+## Programacion funcional 
+La programación funcional es una forma de programar utilizando funciones para realizar operaciones y resolver problemas. Busca que las funciones sean claras y reutilizables.
+```python
+numeros = [1, 2, 3, 4, 5]
+
+cuadrados = list(map(lambda x: x ** 2, numeros))
+
+print(cuadrados)
+```
+## decoradores
+Un decorador en Python es una función que permite agregar nuevas funcionalidades a otra función sin modificar su código original.
+```python
+def decorador(funcion):
+    def nueva_funcion():
+        print("Inicio del programa")
+        funcion()
+
+        print("Fin del programa")
+
+    return nueva_funcion
+
+@decorador
+def saludar():
+    print("Hola, bienvenido a Python")
+
+saludar()
+```
+## closure 
+una `closure` o `clausura` son funciones que establecen una funcion interior, o retornar un funcion estas funciones se caracterizan por recordar el valor de los argumentos que se le pasa.
+```python
+def multiplicando (n):
+    def multiplicador (m):
+        return n*m
+    return multiplicador
+```
