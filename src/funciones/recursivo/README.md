@@ -209,7 +209,6 @@ estas funciones integradas de python sirven para procesar y trasformar soleccion
 
 > [!tip] importante:
 > las funciones `map()` y `filter` resiven dos parametros primero la funcion a ejecutar y segunto el iterable en que va actuar. la funcion que recibe como parametro puede ser normal (`def`) o puede ser aninima(`lambda`).
-> 
 ### 1. map()
 mao aplica una funcion especifico a cada una de los elementos de una coleccion (iterable) y devuelve un nuevo iterable con los resultados.
 ```python
@@ -231,3 +230,7 @@ filter(lambda n:n % 2== 0, numeros)
 ```
 > [!WARMING] Nota importante
 > Tanto `map()` como `filter()` no devuelven listass directamente, sino interado. Esto es para ahorrar memoria(evaluacion perezosa o lazy evaluation). si quieres ver el resultado como una listas tradicional, siempre debes envolver en `list()`.
+
+## lista por comprension 
+
+## diccionarios por comprension
