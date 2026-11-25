@@ -24,7 +24,20 @@ def resta (a,b)
 import matematicas
 ## para hacer uso de una de las funciones tengo que accerder al archivo luego un punto y el nombre de dto, funcion que deseamos utilizar
 matematicas.resta(5,8)
-
-
 ```
-
+## 3. Importar solo lo necesario (from...import)
+a veces es necesario importar solo una parte del modulo, esto se usa cuando deseamos utilizar partes especificas de un modulo. para esto usamos `from nombre_modulo import parte_especifica`
+`matematicas.py`
+```python
+def resta (a,b):
+    return a-b
+def suma(a+b):
+    return a+b
+PI=3.1415
+```
+`main.py`
+```python
+from matematicas import PI
+```
+## PAQUETES(carpetas de modulos)
+cuando el proyecto empiesa a crecer los modulos se ordenan en carpetas
